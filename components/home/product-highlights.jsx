@@ -20,7 +20,7 @@ export default function ProductHighlights() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <ProductCard
             title="Seamless Pipes"
-            image="/Stainless_Steel_Seamless_pipes.jpg"
+            image="/SEAMLESS_PIPE.jpg"
             description="Superior strength and durability for critical applications in oil & gas, chemical, and power industries."
             link="/products/seamless-pipes"
           />
