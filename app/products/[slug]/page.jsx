@@ -9,7 +9,7 @@ const products = [
   {
     slug: "seamless-pipes",
     title: "Seamless Pipes",
-    image: "/Stainless_Steel_Seamless_pipes.jpg",
+    image: "/SEAMLESS_PIPE.jpg",
     description: "High-performance seamless pipes for critical applications requiring superior strength and durability.",
     details: "Seamless pipes are manufactured using an extrusion process and are ideal for high-pressure environments. They are widely used in oil and gas, chemical processing, and power generation industries due to their ability to withstand extreme temperatures and pressures. Additionally, their smooth interior surface ensures efficient fluid flow, reducing friction and improving overall operational efficiency. These pipes are available in a range of sizes and materials to suit specific application requirements, providing unparalleled reliability and longevity.",
   },
