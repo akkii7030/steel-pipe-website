@@ -6,7 +6,7 @@ const products = [
   {
     slug: "seamless-pipes",
     title: "Seamless Pipes",
-    image: "/Stainless_Steel_Seamless_pipes.jpg",
+    image: "/SEAMLESS_PIPE.jpg",
     description: "High-performance seamless pipes for critical applications requiring superior strength and durability.",
   },
   {
