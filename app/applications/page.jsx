@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const applicationData = [
   {
@@ -37,7 +38,7 @@ const applicationData = [
   },
 ];
 
-export default function ApplicationDetails() {
+export default function ApplicationsPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
@@ -65,12 +66,16 @@ export default function ApplicationDetails() {
                 {app.title}
               </h2>
               <p className="text-gray-600 text-lg mb-4">{app.description}</p>
-              <h3 className="text-xl font-semibold mb-2 text-gray-700">
-                Details
-              </h3>
-              <p className="text-gray-700 text-base leading-relaxed">
-                {app.details}
-              </p>
+              {/* Learn More Button */}
+              <Link
+                href={`/applications/${app.title
+                  .toLowerCase()
+                  .replace(/ /g, "-")}`}
+              >
+                <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+                  Learn More
+                </button>
+              </Link>
             </div>
           </div>
         ))}
