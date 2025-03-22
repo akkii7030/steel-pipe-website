@@ -12,6 +12,12 @@ const enTranslations = {
     calculator: "Weight Calculator",
     contact: "Contact Us",
   },
+  applications: {
+    oilAndGas: "Oil and Gas",
+    construction: "Construction",
+    chemicalProcessing: "Chemical Processing",
+    powerGeneration: "Power Generation",
+  },
   buttons: {
     learnMore: "Learn More",
     contactUs: "Contact Us",
@@ -40,6 +46,12 @@ const ruTranslations = {
     applications: "Применение",
     calculator: "Калькулятор веса",
     contact: "Контакты",
+  },
+  applications: {
+    oilAndGas: "Нефть и газ",
+    construction: "Строительство",
+    chemicalProcessing: "Химическая обработка",
+    powerGeneration: "Энергогенерация",
   },
   buttons: {
     learnMore: "Узнать больше",
