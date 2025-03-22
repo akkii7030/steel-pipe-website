@@ -1,20 +1,19 @@
 "use client";
 
-import { useParams } from "next/navigation";
 import Image from "next/image";
 
 const applicationData = [
   {
-    title: "Aerospace",
-    image: "/aerospace.jpg",
+    title: "Oil and Gas",
+    image: "/Oil_Gas.jpg",
     description:
-      "Our precision-engineered pipes are used in aerospace applications, ensuring safety and performance in extreme conditions.",
+      "Our high-pressure pipes are engineered to withstand the demanding conditions of oil and gas extraction, processing, and transportation.",
     details:
-      "These pipes are extensively used in aircraft hydraulic systems, fuel transportation lines, and structural components. Designed to withstand high pressure, temperature fluctuations, and corrosive environments, they ensure safety and reliability in critical aerospace applications.",
+      "Our pipes are widely used in offshore platforms, refineries, gas processing plants, pipeline networks, and storage facilities. They are known for their high durability and pressure resistance. These pipes provide excellent performance in extreme temperatures and pressures, ensuring safe and efficient fluid transport. Additionally, their corrosion-resistant properties reduce maintenance costs and extend service life, making them a reliable choice for critical oil and gas operations.",
   },
   {
     title: "Construction",
-    image: "/constructions.jpg",
+    image: "/Constructions.jpg",
     description:
       "Steel pipes form the backbone of modern construction, providing structural support and utility conveyance.",
     details:
@@ -22,7 +21,7 @@ const applicationData = [
   },
   {
     title: "Chemical Processing",
-    image: "/chemical.jpg",
+    image: "/Chemical.jpg",
     description:
       "Corrosion-resistant pipes ensure safe transport of chemicals in processing facilities.",
     details:
@@ -30,7 +29,7 @@ const applicationData = [
   },
   {
     title: "Power Generation",
-    image: "/power.jpg",
+    image: "/Power.jpg",
     description:
       "Our pipes play a crucial role in power generation infrastructure.",
     details:
@@ -39,34 +38,42 @@ const applicationData = [
 ];
 
 export default function ApplicationDetails() {
-  const { slug } = useParams();
-
-  const formatSlug = (str) =>
-    str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-
-  const app = applicationData.find((item) => formatSlug(item.title) === slug);
-
-  if (!app) {
-    return <p className="text-center text-red-500">Application not found</p>;
-  }
-
   return (
     <div className="container mx-auto px-4 py-12">
-      <div className="flex flex-col md:flex-row items-start gap-8">
-        <Image
-          src={app.image}
-          alt={app.title}
-          width={300}
-          height={200}
-          className="rounded-lg"
-          onError={(e) => (e.target.src = "/placeholder.jpg")}
-        />
-        <div className="flex-1">
-          <h1 className="text-6xl font-bold mb-8 text-gray-800">{app.title}</h1>
-          <p className="text-gray-600 text-xl mb-8">{app.description}</p>
-          <h2 className="text-2xl font-semibold mb-4 text-gray-700">Details</h2>
-          <p className="text-gray-700 text-xl leading-relaxed">{app.details}</p>
-        </div>
+      <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
+        Applications
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {applicationData.map((app, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            {/* Image with error fallback */}
+            <Image
+              src={app.image}
+              alt={app.title}
+              width={400}
+              height={300}
+              className="w-full h-48 object-cover"
+              onError={(e) => {
+                e.currentTarget.src = "/placeholder.jpg";
+              }}
+            />
+            <div className="p-6">
+              <h2 className="text-2xl font-bold mb-4 text-gray-800">
+                {app.title}
+              </h2>
+              <p className="text-gray-600 text-lg mb-4">{app.description}</p>
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">
+                Details
+              </h3>
+              <p className="text-gray-700 text-base leading-relaxed">
+                {app.details}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
