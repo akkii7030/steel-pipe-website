@@ -20,7 +20,7 @@ export default function Footer() {
                   src="/logo.jpg"
                   alt="SteelPipe Pro Logo"
                   fill
-                  className="object-contain brightness-0 invert"
+                  className="object-contain"
                 />
               </div>
             </div>
@@ -85,50 +85,32 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Our Products</h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  href="/products/seamless-pipes"
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                >
+                <Link href="/products/seamless-pipes" className="text-gray-400 hover:text-white transition-colors duration-200">
                   Seamless Pipes
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/products/erw-pipes"
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                >
+                <Link href="/products/erw-pipes" className="text-gray-400 hover:text-white transition-colors duration-200">
                   ERW Pipes
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/products/welded-pipes"
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                >
+                <Link href="/products/welded-pipes" className="text-gray-400 hover:text-white transition-colors duration-200">
                   Welded Pipes
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/products/duplex-pipes"
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                >
+                <Link href="/products/duplex-pipes" className="text-gray-400 hover:text-white transition-colors duration-200">
                   Duplex Pipes
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/products/carbon-steel-pipes"
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                >
+                <Link href="/products/carbon-steel-pipes" className="text-gray-400 hover:text-white transition-colors duration-200">
                   Carbon Steel Pipes
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/products/stainless-steel-pipes"
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                >
+                <Link href="/products/stainless-steel-pipes" className="text-gray-400 hover:text-white transition-colors duration-200">
                   Stainless Steel Pipes
                 </Link>
               </li>
@@ -154,31 +136,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} SteelPipe Pro. All rights reserved.
-          </p>
-          <div className="flex space-x-6">
-            <Link
-              href="/privacy-policy"
-              className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms-of-service"
-              className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
-            >
-              Terms of Service
-            </Link>
-            <Link href="/sitemap" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
-              Sitemap
-            </Link>
-          </div>
-        </div>
       </div>
     </footer>
   )
 }
-
