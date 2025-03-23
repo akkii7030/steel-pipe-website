@@ -27,6 +27,18 @@ const products = [
     image: "/Duplex.jpg",
     description: "Corrosion-resistant duplex steel pipes for demanding environments.",
   },
+  {
+    slug: "carbon-steel-pipes",
+    title: "Carbon Steel Pipes",
+    image: "/Carbon.jpg",
+    description: "Durable and strong carbon steel pipes ideal for heavy-duty applications in construction and energy sectors.",
+  },
+  {
+    slug: "stainless-steel-pipes",
+    title: "Stainless Steel Pipes",
+    image: "/Stainless.jpg",
+    description: "Corrosion-resistant and aesthetically appealing stainless steel pipes suitable for a wide range of uses.",
+  },
 ];
 
 export default function ProductsPage() {
@@ -50,5 +62,5 @@ export default function ProductsPage() {
         ))}
       </div>
     </div>
-  );
+  );  
 }

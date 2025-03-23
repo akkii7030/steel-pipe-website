@@ -34,6 +34,20 @@ const products = [
     description: "Corrosion-resistant duplex steel pipes for demanding environments.",
     details: "Duplex pipes provide excellent corrosion resistance and high mechanical strength. Composed of a balanced mixture of austenitic and ferritic stainless steel, these pipes are ideal for harsh environments like offshore oil rigs, chemical plants, and desalination facilities. Their superior resistance to stress corrosion cracking, pitting, and crevice corrosion ensures longevity and reliability. Duplex pipes are also known for their higher tensile strength compared to standard stainless steel, reducing material thickness and weight in construction projects. Their cost-effectiveness and durability make them a preferred choice for critical applications.",
   },
+  {
+    slug: "carbon-steel-pipes",
+    title: "Carbon Steel Pipes",
+    image: "/Carbon.jpg",
+    description: "Durable and strong carbon steel pipes ideal for heavy-duty applications in construction and energy sectors.",
+    details: "Carbon steel pipes offer excellent mechanical properties and are widely used in industries that require high strength and toughness. They are preferred for applications such as oil and gas transportation, structural supports, and mechanical systems. With a high tolerance for pressure and temperature, carbon steel pipes are also commonly used in power plants and refineries. Their weldability and affordability make them a cost-effective choice for large-scale projects, providing long-lasting performance even in challenging environments.",
+  },
+  {
+    slug: "stainless-steel-pipes",
+    title: "Stainless Steel Pipes",
+    image: "/Stainless.jpg",
+    description: "Corrosion-resistant and aesthetically appealing stainless steel pipes suitable for a wide range of uses.",
+    details: "Stainless steel pipes are known for their exceptional corrosion resistance, making them ideal for applications in food processing, chemical processing, and pharmaceutical industries. Their sleek, polished appearance also makes them a preferred choice for architectural and decorative purposes. Stainless steel pipes are highly durable and maintain their strength and integrity in extreme temperatures and environments. They are available in various grades and finishes to meet specific project needs, ensuring long-term reliability and minimal maintenance.",
+  },
 ];
 
 // Product Details Page Component
