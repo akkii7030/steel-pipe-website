@@ -19,7 +19,7 @@ export default function SearchBar({ onClose }) {
       { title: "ERW Pipes", url: "/products/erw-pipes", type: "product" },
       { title: "Welded Pipes", url: "/products/welded-pipes", type: "product" },
       { title: "Duplex Pipes", url: "/products/duplex-pipes", type: "product" },
-      { title: "Oil & Gas Applications", url: "/applications/oil-gas", type: "application" },
+      { title: "Oil & Gas Applications", url: "/applications/oil-and-gas", type: "application" },
       { title: "Construction Applications", url: "/applications/construction", type: "application" },
       { title: "Weight Calculator", url: "/calculator", type: "tool" },
       { title: "About Us", url: "/about", type: "page" },
