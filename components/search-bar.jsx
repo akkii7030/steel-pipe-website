@@ -76,7 +76,7 @@ export default function SearchBar({ onClose }) {
     <div className="w-full">
       <div className="relative">
         <div className="flex items-center border-b border-gray-300 pb-2">
-          <Search className="h-5 w-5 text-gray-400 mr-2" />
+          <Search className="h-5 w-5 text-gray-400 mr-2 cursor-pointer hover:text-gray-600" />
           <input
             ref={inputRef}
             type="text"
@@ -84,7 +84,7 @@ export default function SearchBar({ onClose }) {
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder={language === "en" ? "Search for products, applications..." : "Поиск продуктов, применений..."}
-            className="flex-grow bg-transparent border-none outline-none text-gray-800 placeholder-gray-400"
+            className="flex-grow bg-transparent border-none outline-none text-gray-800 placeholder-gray-400 cursor-pointer hover:cursor-pointer"
           />
           {query && (
             <button onClick={() => setQuery("")} className="text-gray-400 hover:text-gray-600">

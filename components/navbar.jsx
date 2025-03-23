@@ -59,7 +59,7 @@ export default function Navbar() {
                 alt="SteelPipe Pro Logo"
                 src="/logo.jpg"
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                priority={true} // Optional if it’s above-the-fold
+                priority={true}
                 quality={75}
                 fill
                 className="object-contain"
@@ -84,20 +84,18 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={toggleSearch}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 cursor-pointer"
               aria-label="Search"
             >
-              <Search className="h-5 w-5" />
+              <Search className="h-5 w-5 cursor-pointer" />
             </button>
 
             <button
               onClick={toggleLanguage}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center"
-              aria-label={`Switch to ${
-                language === "en" ? "Russian" : "English"
-              }`}
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center cursor-pointer"
+              aria-label={`Switch to ${language === "en" ? "Russian" : "English"}`}
             >
-              <Globe className="h-5 w-5 mr-1" />
+              <Globe className="h-5 w-5 mr-1 cursor-pointer" />
               <span className="uppercase font-medium">
                 {language === "en" ? "EN" : "RU"}
               </span>
@@ -108,31 +106,29 @@ export default function Navbar() {
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={toggleSearch}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 cursor-pointer"
               aria-label="Search"
             >
-              <Search className="h-5 w-5" />
+              <Search className="h-5 w-5 cursor-pointer" />
             </button>
 
             <button
               onClick={toggleLanguage}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
-              aria-label={`Switch to ${
-                language === "en" ? "Russian" : "English"
-              }`}
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 cursor-pointer"
+              aria-label={`Switch to ${language === "en" ? "Russian" : "English"}`}
             >
-              <Globe className="h-5 w-5" />
+              <Globe className="h-5 w-5 cursor-pointer" />
             </button>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 cursor-pointer"
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             >
               {isMenuOpen ? (
-                <X className="h-6 w-6" />
+                <X className="h-6 w-6 cursor-pointer" />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="h-6 w-6 cursor-pointer" />
               )}
             </button>
           </div>

@@ -55,14 +55,14 @@ export default function ProductHighlights() {
 
 function ProductCard({ title, image, description, link }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
-      <div className="relative h-48">
+    <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 p-4">
+      <div className="relative h-48 rounded-lg overflow-hidden bg-white p-4">
         <Image src={image || "/placeholder.svg"} alt={title} fill className="object-cover" />
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2 text-gray-800">{title}</h3>
         <p className="text-gray-600 mb-4">{description}</p>
-        <Link href={link} className="text-blue-600 font-medium flex items-center">
+        <Link href={link} className="text-blue-600 font-medium flex items-center cursor-pointer">
           Learn More
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
             <path
@@ -76,4 +76,3 @@ function ProductCard({ title, image, description, link }) {
     </div>
   )
 }
-

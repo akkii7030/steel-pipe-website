@@ -43,14 +43,17 @@ function CompanyOverview() {
           </div>
         </div>
 
-        <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
-          <Image
-            src="/Manufacturing_pipes.jpg"
-            alt="Steel pipe manufacturing facility"
-            fill
-            className="object-cover"
-          />
+        <div className="rounded-lg shadow-lg bg-gray-100 p-4">
+          <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <Image
+              src="/Manufacturing_pipes.jpg"
+              alt="Steel pipe manufacturing facility"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
+
       </div>
     </section>
   );
@@ -78,11 +81,11 @@ function Facilities() {
 
 function FacilityCard(imageSrc, title, description) {
   return (
-    <div className="rounded-lg overflow-hidden shadow-md">
+    <div className="rounded-lg overflow-hidden shadow-md bg-gray-100 p-4">
       <div className="relative h-64">
         <Image src={imageSrc} alt={title} fill className="object-cover" />
       </div>
-      <div className="p-4 bg-white">
+      <div className="p-4 bg-white rounded-lg mt-4">
         <h3 className="font-semibold text-lg mb-2">{title}</h3>
         <p className="text-gray-600">{description}</p>
       </div>
